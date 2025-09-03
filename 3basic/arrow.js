@@ -8,11 +8,12 @@
 //     prive:199,
 
 //     msg:function(){
+        
 //         console.log(`${this.username} ,welcome`);
-//         // console.log(this);
+//          console.log(this);
 //     }
 
-// }
+//  }
 // user.msg()
 // user.username="sam"
 //  user.msg()
@@ -20,16 +21,18 @@
 
 // --------------------arrow function-------------------//
 // ---------jo (this) function ke under hai or bo sirf object mai kaam karta hai function mai this ke sath (this.username) mai (undefind)show hota hai---//
+
+
 // function chai(){
 //     let username="aman";
 //     console.log(this);
 // }
 // chai()
 
-const chai=() => {
-    let username="aman"
-    console.log(this);
-}
+// const chai=() => {
+//     let username="aman"
+//     console.log(this);
+// }
 //chai()
 
 // ---------------basic syntax of arrow function-------------//

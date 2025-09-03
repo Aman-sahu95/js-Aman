@@ -16,6 +16,25 @@ for (const i of greet) {
 
 // ---------------------Maps---------------------------//
 // ----map is a object jo key value ko hold karta hai---------------------//
+// ------------is will have a unique value-----------------------------//
 
 const map=new Map()
-Map
+map.set(`IN`,"INDIA")
+map.set(`US`,"State")
+map.set(`Fr`,"Rassia")
+
+
+console.log(map);
+
+for (const [key,value] of map){
+    console.log(key,`:-`,value);
+}
+
+const myObject={
+    game1:`nfs`,
+    game2:`spider`
+}
+// for (const [key,value] of myObject){
+//     console.log(key,`:-`,value);
+// }
+
