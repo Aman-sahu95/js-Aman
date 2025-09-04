@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM four</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="lang">
+        <li>java</li>
+    </ul>
+    <script>
+        function addlang(langname){
+           const li= document.createElement(`li`);
+           li.innerHTML=`${langname}`
+           document.querySelector(`.lang`).appendChild(li)
+        }
+        addlang("python")
+        addlang("script")
+
+        function addopti(langname){
+            const li=document.createElement(`li`)
+            li.appendChild(document.createTextNode(langname))
+            document.querySelector(`.lang`).appendChild(li)
+        }
+        addopti(`google`)
+
+        //------------------Edit-----------------//
+        const seclang=document.querySelector("li:nth-child(2)");
+        // console.log(seclang)
+        // seclang.innerHTML="Mojo"
+        const newli=document.createElement(`li`);
+        newli.textContent="Mojo"
+        seclang.replaceWith(newli)
+
+        // -----------------Edit----------------------//
+
+        const firstlang=document.querySelector("li:first-child")
+        firstlang.outerHTML=`<li>Typescript</li>`
+
+        // -------------------------remove--------------//
+
+        const lastchild=document.querySelector(`li:last-child`)
+        lastchild.remove();
+
+
+    </script>
+</body>
+</html>
